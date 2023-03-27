@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Caveat:wght@400;500;600;700&family=CrimsonPro:wght@400;500;600;700");
+    </style>
+    <title>Munn's To Do Web</title>
+</head>
+<body>
+    <div class="main-container d-flex">
+        <div class="left-bar">
+            <div class="left-title"></div>
+                <span>Todo</span>
+                <i class="fa-solid fa-bars"></i>
+    <!-- Search bar-->
+    <form id="search-form" class="d-flex">
+        <input type="text" id="search-input" placeholder="Search" />
+        
+    </form>
+    <ul id="results">
+        <li class="d-flex mb">
+            <div class="mt no-data">No data</div>
+        </li>
+    </ul>
+    </div>
+
+    <!-- Tasks -->
+    <div class="tasks">
+        <div class="tasks-title">TASKS</div>
+        <ul class="tasks-types">
+            <li>
+                <span>
+                    <i class="fa-solid fa-chevron-right">
+
+                    </i>
+                </span>
+                Upcoming
+            </li>
+            <li>
+                <span>
+                    <i class="fa-solid fa-list-check">
+
+                    </i>
+                </span>
+                Today
+            </li>
+            <li>
+                <span>
+                    <i class="fa-solid fa-calendar-days">
+
+                    </i>
+                </span>
+                This Week
+            </li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <div class="content" id="content">
+        <div class="content-title">
+            <span>Today</span>
+            <input type="date" name="" id="date-input">
+        </div>
+        <form class="d-flex" id="add-todo-form">
+            <input type="text" id="new-todo" placeholder="Add Todo" />
+        </form>
+        <ul class="mt" id="todo-list"></ul>
+    </div>
+    <!-- End of content -->
+
+    <!-- Right -->
+    <div class="right-bar" id="right-bar"></div>
+    </div>
+</body>
+
+<script src="https://kit.fontawesome.com/fec815952d.js"
+      crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</html>
